@@ -1,0 +1,136 @@
+<style>
+    .bg-brac-blue {
+        background-color: #275cab !important;
+        color: #fff !important;
+    }
+    .bg-brac-red {
+        background-color: #cc112a !important;
+        color: #fff !important;
+    }
+    .enter-course {
+        display: none !important;
+    }
+
+    .btn .btn-link .btn-block .text-left {
+        word-wrap: break-word !important;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 py-3">
+            <h5 class="border-bottom">Pinned Notice(s)</h5>
+            <div class="accordion" id="pinned-accordion">
+                <div class="card">
+                    <div class="card-header p-1" id="pinned-1">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#pinned-1-body" aria-expanded="true" aria-controls="pinned-1-body">
+                                buX Student Tutorials
+                            </button>
+                        </h2>
+                    </div>
+            
+                    <div id="pinned-1-body" class="collapse" aria-labelledby="pinned-1" data-parent="#pinned-accordion">
+                        <div class="card-body">
+                            If you are ever confused about anything, feel free to refer to the (<a href="https://www.youtube.com/playlist?list=PL7v9IZwqVRs61VTNZqb0PF8JlksikwATh">buX tutorials</a>).
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header p-1" id="pinned-2">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#pinned-2-body" aria-expanded="false" aria-controls="pinned-2-body">
+                                For complaints about buX courses
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="pinned-2-body" class="collapse" aria-labelledby="pinned-2" data-parent="#pinned-accordion">
+                        <div class="card-body">
+                            For any buX course/content related complaints, please email at <a href="mailto:bux.monitoring@bracu.ac.bd">bux.monitoring@bracu.ac.bd</a> from your G suite email address (<a href="#/" >@g.bracu.ac.bd</a>). Your personal information will be kept confidential.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header p-1" id="pinned-3">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#pinned-3-body" aria-expanded="false" aria-controls="pinned-3-body">
+                                Google Calendar for push notifications
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="pinned-3-body" class="collapse" aria-labelledby="pinned-3" data-parent="#pinned-accordion">
+                        <div class="card-body">
+                            Please watch this <a href="https://youtu.be/gxJrBum9rzM" target="_blank">video tutorial</a> regarding how you can add the course Google
+                            Calendar to get push notifications.
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="card-header p-1" id="pinned-4">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#pinned-4-body" aria-expanded="false" aria-controls="pinned-4-body">
+                                2021 Fall Course Evaluation
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="pinned-4-body" class="collapse" aria-labelledby="pinned-4" data-parent="#pinned-accordion">
+                        <div class="card-body text-dark">
+                            Dear Students,
+                            <br>
+                            <br>
+                            Thank you very much for your hard work in the 2021 Fall semester. <br><br>
+
+                            Links to the course evaluations have been sent on the 14th of January, 2022.  Please complete the evaluation by the 31st of January.<br>
+                            <br><br>
+                            You can also click on this <a href="https://forms.gle/oNoYxk4WAA4124VQA" target="_blank">link</a> to access the form and fill it (once for each course).
+                            <br><br>
+                            Thank you. 
+                            <br><br>
+                            Best wishes,
+                            <br>
+                            The Online Learning Team
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- <div class="col-md-6 bg-brac-blue py-3" id="urgent-notice-body">
+            <h5 class="border-bottom">New/Urgent Notice(s)</h5>
+            <div class="accordion" id="urgent-accordion">
+                <div class="card">
+                    <div class="card-header p-1" id="urgent-1">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#urgent-1-body" aria-expanded="true" aria-controls="urgent-1-body">
+                                Pre-advising Postpone
+                            </button>
+                        </h2>
+                    </div>
+            
+                    <div id="urgent-1-body" class="collapse" aria-labelledby="urgent-1" data-parent="#urgent-accordion">
+                        <div class="card-body text-dark">
+                            Dear Students,
+                            <br><br>
+                            Due to technical issues, today's (28/08/2021) pre-registration slots (10 AM to 6 PM) have been postponed. Another notice with the new schedule will be published on the website soon.
+                            <br><br>
+                            -Office of the Registrar
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>
+
+<script>
+    let unb = document.getElementById('urgent-notice-body')
+
+    setInterval(() => {
+        if (unb.classList.contains('bg-brac-red')) {
+            unb.classList.remove('bg-brac-red');
+            unb.classList.add('bg-brac-blue');
+        } else {
+            unb.classList.remove('bg-brac-blue');
+            unb.classList.add('bg-brac-red');
+        }
+    }, 500)
+</script>
